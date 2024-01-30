@@ -1,7 +1,10 @@
 import Profile from "../assets/Profile Image.jpeg";
 import { FaAlignJustify } from "react-icons/fa";
+import { AiOutlineClose } from "react-icons/ai";
+import { useState } from "react";
 
 const NavBar = () => {
+  const [toggle, setToggle] = useState(true);
   return (
     <>
       <section className="fixed w-full  flex justify-between items-center px-4 py-2 bg-[#a5b4fc] ">
@@ -30,29 +33,35 @@ const NavBar = () => {
             Contact
           </li>
         </ul>
-        <article className="md:hidden z-10">
-          <FaAlignJustify className="h-6 w-6 text-white " />
+        <article className="md:hidden z-10" onClick={() => setToggle(!toggle)}>
+          {toggle ? (
+            <FaAlignJustify className="h-7 w-7 text-white " />
+          ) : (
+            <AiOutlineClose className="h-7 w-7 text-white font-extrabold" />
+          )}
         </article>
-        <ul className="absolute left-0 top-0 bg-[#a5b4fc] w-full h-screen md:hidden flex flex-col gap-7 font-semibold text-4xl justify-center items-center">
-          <li className="text-white hover:border-[2px] hover:rounded-lg p-3">
-            Home
-          </li>
-          <li className="text-white hover:border-[2px] hover:rounded-lg p-3">
-            About
-          </li>
-          <li className="text-white hover:border-[2px] hover:rounded-lg p-3">
-            Skills
-          </li>
-          <li className="text-white hover:border-[2px] hover:rounded-lg p-3">
-            Projects
-          </li>
-          <li className="text-white hover:border-[2px] hover:rounded-lg p-3">
-            Education
-          </li>
-          <li className="text-white hover:border-[2px] hover:rounded-lg p-3">
-            Contact
-          </li>
-        </ul>
+        {!toggle && (
+          <ul className="absolute left-0 top-0 bg-[#a5b4fc] w-full h-screen md:hidden flex flex-col gap-7 font-semibold text-4xl justify-center items-center">
+            <li className="text-white hover:border-[2px] hover:rounded-lg p-3">
+              Home
+            </li>
+            <li className="text-white hover:border-[2px] hover:rounded-lg p-3">
+              About
+            </li>
+            <li className="text-white hover:border-[2px] hover:rounded-lg p-3">
+              Skills
+            </li>
+            <li className="text-white hover:border-[2px] hover:rounded-lg p-3">
+              Projects
+            </li>
+            <li className="text-white hover:border-[2px] hover:rounded-lg p-3">
+              Education
+            </li>
+            <li className="text-white hover:border-[2px] hover:rounded-lg p-3">
+              Contact
+            </li>
+          </ul>
+        )}
       </section>
     </>
   );
