@@ -10,7 +10,7 @@ const NavBar = () => {
           src={Profile}
           alt="Name-Logo"
         />
-        <ul className="hidden md:flex md:flex-row  md:gap-x-7">
+        <ul className="hidden md:flex md:flex-row  md:gap-x-3 lg:gap-x-7">
           <li className="text-white font-semibold text-xl hover:cursor-pointer hover:border-[1px] p-2 hover:rounded-md">
             Home
           </li>
@@ -30,7 +30,7 @@ const NavBar = () => {
             Contact
           </li>
         </ul>
-        <article>
+        <article className="md:hidden">
           <FaAlignJustify className="h-6 w-6 text-white" />
         </article>
       </section>
