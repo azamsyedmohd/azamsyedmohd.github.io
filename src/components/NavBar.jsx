@@ -4,7 +4,7 @@ import { FaAlignJustify } from "react-icons/fa";
 const NavBar = () => {
   return (
     <>
-      <section className="fixed w-full  flex justify-between items-center px-4 py-2 bg-[#a5b4fc]">
+      <section className="fixed w-full  flex justify-between items-center px-4 py-2 bg-[#a5b4fc] ">
         <img
           className="w-[70px] h-[70px] rounded-lg bg-[#a5b4fc]"
           src={Profile}
@@ -30,9 +30,29 @@ const NavBar = () => {
             Contact
           </li>
         </ul>
-        <article className="md:hidden">
-          <FaAlignJustify className="h-6 w-6 text-white" />
+        <article className="md:hidden z-10">
+          <FaAlignJustify className="h-6 w-6 text-white " />
         </article>
+        <ul className="absolute left-0 top-0 bg-[#a5b4fc] w-full h-screen md:hidden flex flex-col gap-7 font-semibold text-4xl justify-center items-center">
+          <li className="text-white hover:border-[2px] hover:rounded-lg p-3">
+            Home
+          </li>
+          <li className="text-white hover:border-[2px] hover:rounded-lg p-3">
+            About
+          </li>
+          <li className="text-white hover:border-[2px] hover:rounded-lg p-3">
+            Skills
+          </li>
+          <li className="text-white hover:border-[2px] hover:rounded-lg p-3">
+            Projects
+          </li>
+          <li className="text-white hover:border-[2px] hover:rounded-lg p-3">
+            Education
+          </li>
+          <li className="text-white hover:border-[2px] hover:rounded-lg p-3">
+            Contact
+          </li>
+        </ul>
       </section>
     </>
   );
