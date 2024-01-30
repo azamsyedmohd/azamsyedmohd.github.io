@@ -1,6 +1,9 @@
 import Profile from "../assets/Profile Image.jpeg";
 import { FaAlignJustify } from "react-icons/fa";
 import { AiOutlineClose } from "react-icons/ai";
+import { FaLinkedin } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+
 import { useState } from "react";
 
 const NavBar = () => {
@@ -62,6 +65,35 @@ const NavBar = () => {
             </li>
           </ul>
         )}
+        <ul className="fixed  top-[42%] left-0">
+          <li className="mb-1">
+            <a
+              href="https://www.linkedin.com/in/syed-mohd-azam/"
+              rel="noreferrer"
+              target="_blank"
+              className="flex flex-row items-center justify-center bg-[#a5b4fc] p-2 ml-[-92px] hover:ml-[-10px] w-fit"
+            >
+              <span className=" text-xl text-white font-semibold pl-2 pr-2">
+                LinkedIn
+              </span>{" "}
+              <FaLinkedin className="w-6 h-6 text-white" />{" "}
+            </a>
+          </li>
+          <li className="mb-1">
+            <a
+              href="https://github.com/Syed-Mohd-Azam"
+              rel="noreferrer"
+              target="_blank"
+              className="flex flex-row  items-center justify-center bg-[#a5b4fc] p-2 w-fit ml-[-80px] hover:ml-[-10px]"
+            >
+              <span className=" text-xl text-white font-semibold pr-2 pl-2">
+                GitHub
+              </span>
+              {"  "}
+              <FaGithub className="w-6 h-6 text-white" />{" "}
+            </a>
+          </li>
+        </ul>
       </section>
     </>
   );
