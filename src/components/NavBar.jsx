@@ -1,4 +1,4 @@
-import Profile from "../assets/Profile Image.jpeg";
+import Signature from "../assets/Syed Mohd Azam.png";
 import { FaAlignJustify } from "react-icons/fa";
 import { AiOutlineClose } from "react-icons/ai";
 import { FaLinkedin } from "react-icons/fa";
@@ -10,16 +10,16 @@ const NavBar = () => {
   const [toggle, setToggle] = useState(true);
   return (
     <>
-      <section className="fixed w-full  flex justify-between items-center px-4 py-2 bg-[#a5b4fc] ">
-        <img
-          className="w-[70px] h-[70px] rounded-lg bg-[#a5b4fc]"
-          src={Profile}
-          alt="Name-Logo"
-        />
+      <section className=" w-full  flex justify-between items-center px-4 py-2 bg-[#a5b4fc] ">
+        <p className="font-caveat text-white text-4xl ml-3">
+          <span className="pr-1">Syed</span>
+          <span className="pr-1 ">Mohd</span>
+          <span className="pr-1">Azam</span>
+        </p>
         <ul className="hidden md:flex md:flex-row  md:gap-x-3 lg:gap-x-7">
-          <li className="text-white font-semibold text-xl hover:cursor-pointer hover:border-[1px] p-2 hover:rounded-md">
+          {/* <li className="text-white font-semibold text-xl hover:cursor-pointer hover:border-[1px] p-2 hover:rounded-md">
             Home
-          </li>
+          </li> */}
           <li className="text-white font-semibold text-xl hover:cursor-pointer  hover:border-[1px] p-2 hover:rounded-md">
             About
           </li>
