@@ -1,10 +1,17 @@
 import Profile from "../assets/Profile Image.jpeg";
+import { useTypewriter } from "react-simple-typewriter";
 const About = () => {
+  const [text] = useTypewriter({
+    words: ["FrontEnd Developer", "React Developer"],
+    loop: {},
+    typeSpeed: 80,
+    deleteSpeed: 80,
+  });
   return (
     <>
       <section className="w-full h-screen flex justify-center items-center ">
-        <section className="flex lg:flex-row max-w-[1100px] mx-auto lg:justify-center  items-center  flex-col  jutify-center gap-7">
-          <article className="flex flex-col p-3">
+        <section className="flex lg:flex-row max-w-7xl mx-auto lg:justify-end  items-center  flex-col  jutify-center gap-7">
+          <article className="flex flex-col p-3 ">
             <p className="text-3xl  lg:text-2xl mb-4 font-serif font-light italic tracking-widest text-opacity-85 text-indigo-800">
               Hi 👋 My name is
             </p>
@@ -12,10 +19,10 @@ const About = () => {
               Syed Mohd Azam
             </p>
             <p className="text-5xl  lg:text-5xl mb-5 font-mono text-indigo-800">
-              FrontEnd Developer
+              {text}
             </p>
           </article>
-          <article className="flex justify-center  relative">
+          <article className="flex justify-center  relative ">
             <img
               className="w-2/3 h-2/3 rounded-t-full rounded-b-full z-20"
               src={Profile}

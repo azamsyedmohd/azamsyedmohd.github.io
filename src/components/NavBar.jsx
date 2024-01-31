@@ -2,6 +2,7 @@ import { FaAlignJustify } from "react-icons/fa";
 import { AiOutlineClose } from "react-icons/ai";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
+import { IoMailOpenSharp } from "react-icons/io5";
 
 import { useState } from "react";
 
@@ -91,6 +92,20 @@ const NavBar = () => {
                 </span>
                 {"  "}
                 <FaGithub className="w-6 h-6 text-white" />{" "}
+              </a>
+            </li>
+            <li className="mb-1">
+              <a
+                href="mailto:smazamamu@gmail.com"
+                rel="noreferrer"
+                target="_blank"
+                className="flex flex-row  items-center justify-center bg-[#a5b4fc] p-2 w-fit ml-[-80px] hover:ml-[-10px]"
+              >
+                <span className=" text-xl text-white font-semibold pr-2 pl-2">
+                  G-Mail
+                </span>
+                {"  "}
+                <IoMailOpenSharp className="w-6 h-6 ml-1 text-white" />{" "}
               </a>
             </li>
           </ul>
