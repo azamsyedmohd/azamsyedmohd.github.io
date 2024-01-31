@@ -10,7 +10,7 @@ const NavBar = () => {
   const [toggle, setToggle] = useState(true);
   return (
     <>
-      <section className="fixed  w-full  flex justify-between items-center px-4 py-2 bg-[#a5b4fc] ">
+      <section className="fixed  w-full  flex justify-between items-center px-4 py-2 bg-[#a5b4fc] z-50">
         <p className="font-caveat text-white text-4xl ml-3">
           <span className="pr-1">Syed</span>
           <span className="pr-1 ">Mohd</span>
