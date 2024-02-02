@@ -5,7 +5,6 @@ import JavaScript from "../assets/JavaScript.png";
 import React from "../assets/React.png";
 import GitHub from "../assets/Github.png";
 import ReduxToolkit from "../assets/Redux.png";
-import Tailwind from "../assets/tailwind.png";
 const Skills = () => {
   return (
     <>
