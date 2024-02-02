@@ -12,7 +12,7 @@ const Skills = () => {
       <section className="w-full min-h-screen bg-[#a5b4fc]">
         <section className="w-3/4 mx-auto  flex flex-col gap-12">
           <article className="w-full">
-            <p className="text-5xl font-roboto font-semibold tracking-wide underline underline-offset-8  w-fit mt-20 text-white italic">
+            <p className="text-4xl font-roboto font-semibold tracking-wide underline underline-offset-8  w-fit mt-20 text-white italic">
               Skills
             </p>
           </article>
