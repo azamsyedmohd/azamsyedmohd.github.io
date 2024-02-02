@@ -1,7 +1,7 @@
 const Contact = () => {
   return (
     <>
-      <section></section>
+      <section className="w-full h-screen"></section>
     </>
   );
 };
