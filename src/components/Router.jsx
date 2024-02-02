@@ -7,15 +7,16 @@ import Contact from "./Contact";
 import Footer from "./Footer";
 import AppLayout from "./AppLayout";
 import { createBrowserRouter } from "react-router-dom";
+import AppStructure from "./AppStructure";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <AppLayout />,
+    element: <AppStructure />,
     children: [
       {
-        path: "navbar",
-        element: <NavBar />,
+        path: "/",
+        element: <AppLayout />,
       },
       {
         path: "about",

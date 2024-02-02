@@ -5,6 +5,7 @@ import { FaGithub } from "react-icons/fa";
 import { IoMailOpenSharp } from "react-icons/io5";
 
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
   const [toggle, setToggle] = useState(true);
@@ -20,21 +21,31 @@ const NavBar = () => {
           {/* <li className="text-white font-semibold text-xl hover:cursor-pointer hover:border-[1px] p-2 hover:rounded-md">
             Home
           </li> */}
-          <li className="text-white font-semibold text-xl hover:cursor-pointer  hover:border-[1px] p-2 hover:rounded-md">
-            About
-          </li>
-          <li className="text-white font-semibold text-xl hover:cursor-pointer  hover:border-[1px] p-2 hover:rounded-md">
-            Skills
-          </li>
-          <li className="text-white font-semibold text-xl hover:cursor-pointer  hover:border-[1px] p-2 hover:rounded-md">
-            Projects
-          </li>
-          <li className="text-white font-semibold text-xl hover:cursor-pointer hover:border-[1px] p-2 hover:rounded-md">
-            Education
-          </li>
-          <li className="text-white font-semibold text-xl hover:cursor-pointer hover:border-[1px] p-2 hover:rounded-md">
-            Contact
-          </li>
+          <Link to="about">
+            <li className="text-white font-semibold text-xl hover:cursor-pointer  hover:border-[1px] p-2 hover:rounded-md">
+              About
+            </li>
+          </Link>
+          <Link to="skills">
+            <li className="text-white font-semibold text-xl hover:cursor-pointer  hover:border-[1px] p-2 hover:rounded-md">
+              Skills
+            </li>
+          </Link>
+          <Link to="projects">
+            <li className="text-white font-semibold text-xl hover:cursor-pointer  hover:border-[1px] p-2 hover:rounded-md">
+              Projects
+            </li>
+          </Link>
+          <Link to="education">
+            <li className="text-white font-semibold text-xl hover:cursor-pointer hover:border-[1px] p-2 hover:rounded-md">
+              Education
+            </li>
+          </Link>
+          <Link to="contact">
+            <li className="text-white font-semibold text-xl hover:cursor-pointer hover:border-[1px] p-2 hover:rounded-md">
+              Contact
+            </li>
+          </Link>
         </ul>
         <article className="md:hidden z-10" onClick={() => setToggle(!toggle)}>
           {toggle ? (
