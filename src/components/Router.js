@@ -3,7 +3,6 @@ import Skills from "./Skills";
 import Projects from "./Projects";
 import Education from "./Education";
 import Contact from "./Contact";
-import Footer from "./Footer";
 import AppLayout from "./AppLayout";
 import { createBrowserRouter } from "react-router-dom";
 import AppStructure from "./AppStructure";
@@ -36,10 +35,6 @@ const router = createBrowserRouter([
       {
         path: "contact",
         element: <Contact />,
-      },
-      {
-        path: "footer",
-        element: <Footer />,
       },
     ],
   },
