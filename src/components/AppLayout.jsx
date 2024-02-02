@@ -12,7 +12,6 @@ function AppLayout() {
       <Projects />
       <Education />
       <Contact />
-      <Footer />
     </>
   );
 }
