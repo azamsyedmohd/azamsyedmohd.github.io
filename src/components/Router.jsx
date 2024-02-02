@@ -12,34 +12,36 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <AppLayout />,
-  },
-  {
-    path: "/navbar",
-    element: <NavBar />,
-  },
-  {
-    path: "/about",
-    element: <About />,
-  },
-  {
-    path: "/skills",
-    element: <Skills />,
-  },
-  {
-    path: "/projects",
-    element: <Projects />,
-  },
-  {
-    path: "/education",
-    element: <Education />,
-  },
-  {
-    path: "/contact",
-    element: <Contact />,
-  },
-  {
-    path: "/footer",
-    element: <Footer />,
+    children: [
+      {
+        path: "navbar",
+        element: <NavBar />,
+      },
+      {
+        path: "about",
+        element: <About />,
+      },
+      {
+        path: "skills",
+        element: <Skills />,
+      },
+      {
+        path: "projects",
+        element: <Projects />,
+      },
+      {
+        path: "education",
+        element: <Education />,
+      },
+      {
+        path: "contact",
+        element: <Contact />,
+      },
+      {
+        path: "footer",
+        element: <Footer />,
+      },
+    ],
   },
 ]);
 export default router;
