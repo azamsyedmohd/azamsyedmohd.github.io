@@ -1,5 +1,4 @@
-[[plugins]]
-  package = "netlify-plugin-vite"
+
   
 [build]
   command = "npm install && npm run build"
