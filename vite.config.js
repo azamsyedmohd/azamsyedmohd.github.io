@@ -7,4 +7,7 @@ export default defineConfig({
   esbuild: {
     jsx: "react",
   },
+  build: {
+    outDir: "dist",
+  },
 });
