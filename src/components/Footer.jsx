@@ -1,11 +1,11 @@
 const Footer = () => {
   return (
     <>
-      <section className="bg-[#a5b4fc] py-6 px-16 flex justify-between  items-center gap-20">
-        <h1 className="text-white text-2xl font-semibold tracking-wider">
+      <section className="w-full bg-[#a5b4fc] py-6 px-16 flex flex-col gap-3 lg:flex-row lg:justify-between  items-center lg:gap-20">
+        <h1 className="text-white lg:text-2xl font-semibold tracking-wider">
           &#169; No Copyright
         </h1>
-        <h1 className="text-white text-2xl font-semibold tracking-wider">
+        <h1 className="text-white lg:text-2xl font-semibold tracking-wider">
           Made with Love 🧡!!
         </h1>
 

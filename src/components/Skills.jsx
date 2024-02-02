@@ -19,32 +19,32 @@ const Skills = () => {
           <article className="w-full mt-28">
             <Marquee>
               <img
-                className="h-28 w-40 rounded-2xl px-8"
+                className="h-24 w-48 rounded-2xl px-8"
                 src={HTML5}
                 alt="HTML-Image"
               />
               <img
-                className="h-28 w-40 rounded-2xl  px-8"
+                className="h-24 w-48 rounded-2xl  px-8"
                 src={CSS3}
                 alt="CSS3-Image"
               />
               <img
-                className="h-28 w-40 rounded-2xl px-8"
+                className="h-24 w-48 rounded-3xl px-8"
                 src={JavaScript}
                 alt="JavaScript-Image"
               />
               <img
-                className="h-28 w-40 rounded-2xl px-8"
+                className="h-24 w-48 rounded-2xl px-8"
                 src={React}
                 alt="React-Image"
               />
               <img
-                className="h-28 w-40 rounded-2xl px-8"
+                className="h-24 w-48 rounded-2xl px-8"
                 src={GitHub}
                 alt="GitHub-Image"
               />
               <img
-                className="h-28 w-48 rounded-2xl px-8"
+                className="h-24 w-48 rounded-2xl px-8"
                 src={ReduxToolkit}
                 alt="Redux-Toolkit-Image"
               />
