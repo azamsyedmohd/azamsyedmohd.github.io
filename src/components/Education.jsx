@@ -3,7 +3,7 @@ const Education = () => {
   return (
     <>
       <section className="min-h-screen w-full bg-[#a5b4fc] py-20">
-        <section className="text-4xl w-9/12 mx-auto lg:text-5xl text-white underline underline-offset-8 mb-20">
+        <section className="text-4xl w-9/12 mx-auto lg:text-5xl text-white underline underline-offset-8 mb-20 px-10">
           Education
         </section>
         <section className="w-9/12 container mx-auto flex flex-col lg:flex-row lg:justify-center lg:items-center">
