@@ -23,7 +23,11 @@ const Contact = () => {
               <p className="text-[#a5b4fc] font-semibold text-2xl italic">
                 Email :{" "}
               </p>
-              <input className="" type="email" placeholder="Email Please!" />
+              <input
+                className="outline outline-0 border-2 border-[#a5b4fc] py-2 px-4 rounded-md text-lg italic tracking-widest"
+                type="email"
+                placeholder="Email Please!"
+              />
             </article>
             <article className="flex flex-col gap-2 ">
               <p className="text-[#a5b4fc] font-semibold text-2xl italic">
