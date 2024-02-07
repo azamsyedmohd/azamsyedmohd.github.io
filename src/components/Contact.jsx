@@ -10,7 +10,7 @@ const Contact = () => {
         <section className="w-9/12  mx-auto py-3">
           <section className="w-6/12 mx-auto  px-10 flex flex-col gap-5">
             <article className="flex flex-col gap-2">
-              <p className="text-[#a5b4fc] font-semibold text-2xl italic">
+              <p className="text-[#a5b4fc] font-semibold text-2xl italic tracking-wide">
                 Name :{" "}
               </p>
               <input
@@ -20,7 +20,7 @@ const Contact = () => {
               />
             </article>
             <article className="flex flex-col gap-2">
-              <p className="text-[#a5b4fc] font-semibold text-2xl italic">
+              <p className="text-[#a5b4fc] font-semibold text-2xl italic tracking-wide">
                 Email :{" "}
               </p>
               <input
@@ -30,7 +30,7 @@ const Contact = () => {
               />
             </article>
             <article className="flex flex-col gap-2 ">
-              <p className="text-[#a5b4fc] font-semibold text-2xl italic">
+              <p className="text-[#a5b4fc] font-semibold text-2xl italic tracking-wide">
                 Message :{" "}
               </p>
               <textarea
