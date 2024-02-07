@@ -11,8 +11,8 @@ const Skills = () => {
     <>
       <section className="w-full min-h-screen bg-[#a5b4fc] py-24">
         <section className="w-3/4 mx-auto  flex flex-col gap-12">
-          <article className="w-full">
-            <p className="text-4xl font-roboto font-semibold tracking-wide w-fit mt-20 text-white italic">
+          <article className="w-full flex justify-center">
+            <p className=" text-xl md:text-2xl lg:text-4xl font-roboto  tracking-wide w-fit mt-20 text-white italic ">
               {"' " + skillQuote + " '"}
             </p>
           </article>
