@@ -16,7 +16,7 @@ const Contact = () => {
               <input
                 className="border-[#a5b4fc] border-2 px-4 py-2 outline-0 rounded-md italic tracking-widest text-lg"
                 type="text"
-                placeholder="Your Name Please!"
+                placeholder="Name Please!"
               />
             </article>
             <article className="flex flex-col gap-2">
@@ -37,8 +37,13 @@ const Contact = () => {
                 className="p-5 border-2 border-[#a5b4fc] outline outline-0 text-lg italic font-lighter text-gray-500 tracking-widest rounded-md overflow-auto"
                 cols="30"
                 rows="8"
-                placeholder="Your Message Please!"
+                placeholder="Message Please!"
               ></textarea>
+            </article>
+            <article>
+              <button className="bg-[#a5b4fc] py-2 px-3 text-white rounded-md font-semibold text-xl ml-2 mt-2 tracking-wider italic">
+                Submit
+              </button>
             </article>
           </section>
         </section>
