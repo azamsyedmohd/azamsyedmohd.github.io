@@ -1,4 +1,5 @@
 import ProjectCard from "./ProjectCard";
+import projects from "../utils/constants";
 const Projects = () => {
   const projects =
     "Projects are the poetry of hard work, the prose of dedication, and the epics of achievement !!";
@@ -11,7 +12,9 @@ const Projects = () => {
           <span>{"'"}</span>
         </section>
         <section className="w-9/12 mx-auto  p-8 my-8 ">
-          <ProjectCard />
+          {projects?.map((project, index) => (
+            <ProjectCard key={index} project={project} />
+          ))}
         </section>
       </section>
     </>
