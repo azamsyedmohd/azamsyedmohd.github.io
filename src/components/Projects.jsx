@@ -7,9 +7,9 @@ const Projects = () => {
   return (
     <>
       <section className="w-full min-h-screen">
-        <section className="w-9/12 mx-auto   pt-24">
+        <section className="w-9/12 mx-auto pt-24">
           <span>{"'"}</span>
-          <span className="text-lg md:2xl tracking-wideleading-relaxed lg:text-4xl text-[#a5b4fc] italic">
+          <span className="text-lg md:2xl leading-relaxed lg:text-4xl text-[#a5b4fc] italic  ">
             {project}
           </span>
           <span>{"'"}</span>
