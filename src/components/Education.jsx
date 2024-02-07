@@ -5,7 +5,7 @@ const Education = () => {
   return (
     <>
       <section className="min-h-screen w-full bg-[#a5b4fc] py-24">
-        <section className="text-4xl w-9/12 mx-auto lg:text-4xl text-white  mb-10 px-10 italic ">
+        <section className="text-xl md:text-2xl w-9/12 mx-auto lg:text-4xl text-white  mb-10 px-10 italic ">
           <span className="leading-relaxed">{"'" + education + " '"}</span>
           <span className="font-semibold"> -- Albert Einstein</span>
         </section>
