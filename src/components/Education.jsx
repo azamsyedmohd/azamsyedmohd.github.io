@@ -4,12 +4,12 @@ const Education = () => {
     "Education is not the learning of facts, but the training of the mind to think";
   return (
     <>
-      <section className="min-h-screen w-full bg-[#a5b4fc] py-24">
+      <section className="min-h-screen w-full bg-[#a5b4fc] py-28">
         <section className="text-xl md:text-2xl w-9/12 mx-auto lg:text-4xl text-white  mb-10 px-10 italic ">
           <span className="leading-relaxed">{"'" + education + " '"}</span>
           <span className="font-semibold"> -- Albert Einstein</span>
         </section>
-        <section className="w-9/12 container mx-auto flex flex-col lg:flex-row lg:justify-center lg:items-center">
+        <section className="w-9/12 container mx-auto flex flex-col lg:flex-row lg:justify-center lg:items-center pb-10">
           <section className="flex flex-row w-9/12 mx-auto  p-5 hover:scale-125">
             <article className="w-[400px] h-[430px] rounded-xl p-1">
               <section className="h-2/5 bg-white flex justify-center items-center rounded-t-xl">
