@@ -1,10 +1,13 @@
 import AMU from "../assets/AMU-Logo.png";
 const Education = () => {
+  const education =
+    "Education is not the learning of facts, but the training of the mind to think";
   return (
     <>
       <section className="min-h-screen w-full bg-[#a5b4fc] py-20">
-        <section className="text-4xl w-9/12 mx-auto lg:text-4xl text-white underline underline-offset-8 mb-20 px-10 italic">
-          Education
+        <section className="text-4xl w-9/12 mx-auto lg:text-4xl text-white  mb-20 px-10 italic ">
+          <span className="leading-relaxed">{"'" + education + " '"}</span>
+          <span className="font-semibold"> -- Albert Einstein</span>
         </section>
         <section className="w-9/12 container mx-auto flex flex-col lg:flex-row lg:justify-center lg:items-center">
           <section className="flex flex-row w-9/12 mx-auto  p-5 hover:scale-125">

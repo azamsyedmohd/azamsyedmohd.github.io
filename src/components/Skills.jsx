@@ -6,13 +6,14 @@ import React from "../assets/React.png";
 import GitHub from "../assets/Github.png";
 import ReduxToolkit from "../assets/Redux.png";
 const Skills = () => {
+  const skillQuote = "Skills are the currency of the future, so invest wisely";
   return (
     <>
       <section className="w-full min-h-screen bg-[#a5b4fc]">
         <section className="w-3/4 mx-auto  flex flex-col gap-12">
           <article className="w-full">
-            <p className="text-4xl font-roboto font-semibold tracking-wide underline underline-offset-8  w-fit mt-20 text-white italic">
-              Skills
+            <p className="text-4xl font-roboto font-semibold tracking-wide w-fit mt-20 text-white italic">
+              {"' " + skillQuote + " '"}
             </p>
           </article>
           <article className="w-full mt-28">
