@@ -9,7 +9,7 @@ const Skills = () => {
   const skillQuote = "Skills are the currency of the future, so invest wisely";
   return (
     <>
-      <section className="w-full min-h-screen bg-[#a5b4fc]">
+      <section className="w-full min-h-screen bg-[#a5b4fc] py-24">
         <section className="w-3/4 mx-auto  flex flex-col gap-12">
           <article className="w-full">
             <p className="text-4xl font-roboto font-semibold tracking-wide w-fit mt-20 text-white italic">
