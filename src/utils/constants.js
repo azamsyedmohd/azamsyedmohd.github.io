@@ -1,3 +1,4 @@
+// AlL constants are there and can be imported whenever needed.
 import YouTube from "../assets/Youtube-Scrrenshot.png";
 import Swiggy from "../assets/Swiggy.png";
 const projects = [
