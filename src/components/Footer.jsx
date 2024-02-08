@@ -10,7 +10,7 @@ const Footer = () => {
           &#169; No Copyright
         </h1>
         <h1 className="text-white lg:text-2xl font-semibold tracking-wider italic">
-          Made with Love !!🧡
+          🧡Made with Love !!🧡
         </h1>
 
         <section>
