@@ -3,6 +3,7 @@ import { AiOutlineClose } from "react-icons/ai";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { IoMailOpenSharp } from "react-icons/io5";
+import { FaPhone } from "react-icons/fa6";
 
 import { useState } from "react";
 import { Link } from "react-router-dom";
@@ -117,6 +118,20 @@ const NavBar = () => {
                 </span>
                 {"  "}
                 <IoMailOpenSharp className="w-6 h-6 ml-1 text-white" />{" "}
+              </a>
+            </li>
+            <li className="mb-1">
+              <a
+                href="tel:+91-9760217119"
+                rel="noreferrer"
+                target="_blank"
+                className="flex flex-row  items-center justify-center bg-[#a5b4fc] p-2 w-fit ml-[-160px] hover:ml-[-10px]"
+              >
+                <span className=" text-xl text-white font-semibold pr-2 pl-2">
+                  +91-9760217119
+                </span>
+                {"  "}
+                <FaPhone className="w-6 h-6 ml-1 text-white" />{" "}
               </a>
             </li>
           </ul>
