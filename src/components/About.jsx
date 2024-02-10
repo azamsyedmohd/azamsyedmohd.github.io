@@ -1,6 +1,8 @@
 import Profile from "../assets/Profile Image.jpeg";
 import { useTypewriter } from "react-simple-typewriter";
+import { useSelector } from "react-redux";
 const About = () => {
+  const dark = useSelector((state) => state?.darkMode?.isDarkMode);
   const [text] = useTypewriter({
     words: ["FrontEnd Developer", "React Developer"],
     loop: {},
@@ -9,16 +11,34 @@ const About = () => {
   });
   return (
     <>
-      <section className="w-full h-screen flex justify-center items-center ">
+      <section
+        className={
+          dark === false
+            ? "w-full h-screen flex justify-center items-center "
+            : "w-full h-screen flex justify-center items-center bg-black"
+        }
+      >
         <section className="flex lg:flex-row max-w-7xl mx-auto lg:justify-end  items-center  flex-col  jutify-center gap-7">
           <article className="flex flex-col p-3 ">
-            <p className="text-xl  lg:text-2xl mb-4 font-serif font-light italic tracking-widest text-opacity-85 text-indigo-800">
+            <p
+              className={
+                dark === false
+                  ? "text-xl  lg:text-2xl mb-4 font-serif font-light italic tracking-widest text-opacity-85 text-indigo-800"
+                  : "text-xl  lg:text-2xl mb-4 font-serif font-light italic tracking-widest text-opacity-85 text-[#a5b4fc]"
+              }
+            >
               Hi 👋 My name is
             </p>
             <p className="text-3xl  whitespace-nowrap text-[#a5b4fc] lg:text-5xl mb-7 italic">
               Syed Mohd Azam
             </p>
-            <p className="text-3xl  lg:text-5xl mb-5 font-mono text-indigo-800">
+            <p
+              className={
+                dark === false
+                  ? "text-3xl  lg:text-5xl mb-5 font-mono text-indigo-800"
+                  : "text-3xl  lg:text-5xl mb-5 font-mono text-[#a5b4fc]"
+              }
+            >
               {text}
             </p>
           </article>
