@@ -20,7 +20,13 @@ const Skills = () => {
       >
         <section className="w-3/4 mx-auto  flex flex-col gap-12">
           <article className="w-full flex justify-center">
-            <p className=" text-xl md:text-2xl lg:text-4xl font-roboto  tracking-wide w-fit mt-20 text-white italic ">
+            <p
+              className={
+                dark === false
+                  ? " text-xl md:text-2xl lg:text-4xl font-roboto  tracking-wide w-fit mt-20 text-white italic "
+                  : " text-xl md:text-2xl lg:text-4xl font-roboto  tracking-wide w-fit mt-20 text-[#a5b4fc] italic "
+              }
+            >
               {"'" + skillQuote + "'"}
             </p>
           </article>
