@@ -1,12 +1,20 @@
 /* eslint-disable no-unused-vars */
 import ProjectCard from "./ProjectCard";
 import projects from "../utils/constants";
+import { useSelector } from "react-redux";
 const Projects = () => {
+  const dark = useSelector((state) => state?.darkMode?.isDarkMode);
   const project =
     "Projects are the poetry of hard work, the prose of dedication, and the epics of achievement !!";
   return (
     <>
-      <section className="w-full min-h-screen py-20">
+      <section
+        className={
+          dark === false
+            ? "w-full min-h-screen py-20"
+            : "bg-black w-full min-h-screen py-20"
+        }
+      >
         <section className="w-9/12 mx-auto pt-24">
           <span className="text-lg md:2xl leading-relaxed lg:text-4xl text-[#a5b4fc] italic">
             {"'"}
