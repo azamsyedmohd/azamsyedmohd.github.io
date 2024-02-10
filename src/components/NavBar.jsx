@@ -25,7 +25,7 @@ const NavBar = () => {
         className={
           dark === false
             ? "fixed w-full  flex justify-between items-center px-12 py-5 bg-[#a5b4fc] z-50 shadow-md"
-            : "fixed w-full  flex justify-between items-center px-12 py-5 bg-blue-700 z-50 shadow-md"
+            : "fixed w-full  flex justify-between items-center px-12 py-5 bg-[#121212] z-50 shadow-md"
         }
       >
         <p className="font-caveat text-white text-4xl ml-3">
