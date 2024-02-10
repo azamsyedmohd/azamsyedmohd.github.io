@@ -1,11 +1,19 @@
 import { Link } from "react-router-dom";
+import { useSelector } from "react-redux";
 const Footer = () => {
+  const dark = useSelector((state) => state?.darkMode?.isDarkMode);
   const scrollToTop = () => {
     window.scrollTo(0, 0);
   };
   return (
     <>
-      <section className=" w-full bg-[#a5b4fc] py-6 px-16 flex flex-col gap-3 lg:flex-row lg:justify-between  items-center lg:gap-20 border-2 shadow-xl">
+      <section
+        className={
+          dark === false
+            ? " w-full bg-[#a5b4fc] py-6 px-16 flex flex-col gap-3 lg:flex-row lg:justify-between  items-center lg:gap-20 border-2 shadow-xl"
+            : " w-full bg-blue-700 py-6 px-16 flex flex-col gap-3 lg:flex-row lg:justify-between  items-center lg:gap-20 border-2 shadow-xl"
+        }
+      >
         <h1 className="text-white lg:text-2xl font-semibold tracking-wider italic">
           &#169; No Copyright
         </h1>
