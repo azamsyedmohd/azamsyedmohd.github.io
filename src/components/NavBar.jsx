@@ -57,7 +57,7 @@ const NavBar = () => {
             </li>
           </Link>
         </ul>
-        <section className="flex flex-row gap-4 text-white justify-center items-center ">
+        <section className="hidden lg:flex lg:flex-row lg:gap-4  lg:justify-center lg:items-center ">
           <button
             className="text-white font-semibold italic text-xl"
             onClick={handleDarkMode}
