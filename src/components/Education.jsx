@@ -1,10 +1,18 @@
+import { useSelector } from "react-redux";
 import AMU from "../assets/AMU-Logo.png";
 const Education = () => {
+  const dark = useSelector((state) => state?.darkMode?.isDarkMode);
   const education =
     "Education is not the learning of facts, but the training of the mind to think";
   return (
     <>
-      <section className="min-h-screen w-full bg-[#a5b4fc] py-28">
+      <section
+        className={
+          dark === false
+            ? "min-h-screen w-full bg-[#a5b4fc] py-28"
+            : "min-h-screen w-full bg-blue-700 py-28"
+        }
+      >
         <section className="text-xl md:text-2xl lg:w-9/12 mx-auto lg:text-4xl text-white  mb-10 px-10 italic container">
           <span className="leading-relaxed">{"'" + education + " '"}</span>
           <span className="font-semibold"> -- Albert Einstein</span>
