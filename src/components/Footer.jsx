@@ -28,7 +28,11 @@ const Footer = () => {
             <span className="pr-1">Azam</span>
             <Link to="/">
               <span
-                className="p-2 bg-white text-[#a5b4fc] rounded-full ml-4 hover:cursor-pointer font-semibold animate-bounce inline-block "
+                className={
+                  dark === false
+                    ? "p-2 bg-white text-[#a5b4fc] rounded-full ml-4 hover:cursor-pointer font-semibold animate-bounce inline-block "
+                    : "p-2 bg-white text-[#121212] rounded-full ml-4 hover:cursor-pointer font-semibold animate-bounce inline-block "
+                }
                 onClick={() => scrollToTop()}
               >
                 Top
