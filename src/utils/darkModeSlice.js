@@ -12,5 +12,5 @@ const darkModeSlice = createSlice({
   },
 });
 // eslint-disable-next-line no-unused-vars
-const { toggleDarkMode } = darkModeSlice.actions;
+export const { toggleDarkMode } = darkModeSlice.actions;
 export default darkModeSlice.reducer;

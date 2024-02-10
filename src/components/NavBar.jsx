@@ -4,12 +4,21 @@ import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { IoMailOpenSharp } from "react-icons/io5";
 import { FaPhone } from "react-icons/fa6";
-
+import { MdDarkMode } from "react-icons/md";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-
+import { useDispatch, useSelector } from "react-redux";
+import { IoSunny } from "react-icons/io5";
+import { BsToggleOn } from "react-icons/bs";
+import { BsToggleOff } from "react-icons/bs";
+import { toggleDarkMode } from "../utils/darkModeSlice";
 const NavBar = () => {
   const [toggle, setToggle] = useState(true);
+  const dark = useSelector((state) => state?.darkMode?.isDarkMode);
+  const dispatch = useDispatch();
+  const handleDarkMode = () => {
+    dispatch(toggleDarkMode());
+  };
   return (
     <>
       <section className="fixed w-full  flex justify-between items-center px-12 py-5 bg-[#a5b4fc] z-50 shadow-md ">
@@ -48,6 +57,23 @@ const NavBar = () => {
             </li>
           </Link>
         </ul>
+        <section className="flex flex-row gap-4 text-white justify-center items-center ">
+          <button
+            className="text-white font-semibold italic text-xl"
+            onClick={handleDarkMode}
+          >
+            {dark === true ? (
+              <BsToggleOn className="w-8 h-8 font-bold" />
+            ) : (
+              <BsToggleOff className="w-8 h-8 font-bold" />
+            )}
+          </button>
+          {dark === true ? (
+            <MdDarkMode className="w-8 h-8 text-white font-bold hover:cursor-pointer" />
+          ) : (
+            <IoSunny className="w-8 h-8 text-white font-bold hover:cursor-pointer " />
+          )}
+        </section>
         <article className="md:hidden z-10" onClick={() => setToggle(!toggle)}>
           {toggle ? (
             <FaAlignJustify className="h-7 w-7 text-white " />
@@ -77,6 +103,7 @@ const NavBar = () => {
             </li>
           </ul>
         )}
+
         <article className="hidden md:block md:fixed  md:top-[42%] md:left-0">
           <ul className="flex flex-col">
             <li className="mb-1">
