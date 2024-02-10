@@ -23,7 +23,11 @@ const Contact = () => {
                 Name :{" "}
               </p>
               <input
-                className="border-[#a5b4fc] border-2 px-4 py-2 outline-0 rounded-md italic tracking-widest text-md lg:text-lg"
+                className={
+                  dark === false
+                    ? "border-[#a5b4fc] border-2 px-4 py-2 outline-0 rounded-md italic tracking-widest text-md lg:text-lg"
+                    : " px-4 py-2 outline-0 rounded-md italic tracking-widest text-md lg:text-lg"
+                }
                 type="text"
                 placeholder="Name Please!"
               />
@@ -33,7 +37,11 @@ const Contact = () => {
                 Email :{" "}
               </p>
               <input
-                className="outline outline-0 border-2 border-[#a5b4fc] py-2 px-4 rounded-md text-md text-md lg:text-lg italic tracking-widest"
+                className={
+                  dark === false
+                    ? "outline outline-0 border-2 border-[#a5b4fc] py-2 px-4 rounded-md text-md text-md lg:text-lg italic tracking-widest"
+                    : "outline outline-0  py-2 px-4 rounded-md text-md text-md lg:text-lg italic tracking-widest"
+                }
                 type="email"
                 placeholder="Email Please!"
               />
@@ -43,7 +51,11 @@ const Contact = () => {
                 Message :{" "}
               </p>
               <textarea
-                className="p-5 border-2 border-[#a5b4fc] outline outline-0 text-lg italic font-lighter text-gray-500 tracking-widest rounded-md overflow-auto"
+                className={
+                  dark === false
+                    ? "p-5 border-2 border-[#a5b4fc] outline outline-0 text-lg italic font-lighter text-gray-500 tracking-widest rounded-md overflow-auto"
+                    : "p-5  outline outline-0 text-lg italic font-lighter text-gray-500 tracking-widest rounded-md overflow-auto"
+                }
                 cols="30"
                 rows="8"
                 placeholder="Message Please!"
