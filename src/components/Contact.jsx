@@ -50,7 +50,13 @@ const Contact = () => {
               ></textarea>
             </article>
             <article>
-              <button className="bg-[#a5b4fc] py-2 px-3 text-white rounded-md font-semibold text-lg lg:text-xl ml-2 mt-2 tracking-wider italic">
+              <button
+                className={
+                  dark === false
+                    ? "bg-[#a5b4fc] py-2 px-3 text-white rounded-md font-semibold text-lg lg:text-xl ml-2 mt-2 tracking-wider italic"
+                    : "bg-[#a5b4fc] py-2 px-3 text-black rounded-md font-semibold text-lg lg:text-xl ml-2 mt-2 tracking-wider italic"
+                }
+              >
                 Submit
               </button>
             </article>

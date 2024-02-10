@@ -1,5 +1,8 @@
+import { useSelector } from "react-redux";
+
 // eslint-disable-next-line react/prop-types
 const ProjectCard = ({ project }) => {
+  const dark = useSelector((state) => state?.darkMode?.isDarkMode);
   // eslint-disable-next-line react/prop-types
   const { name, src, code, link } = project;
   return (
@@ -10,17 +13,35 @@ const ProjectCard = ({ project }) => {
         </article>
         <article className="w-full h-3/6 bg-[#a5b4fc] px-10 py-6 rounded-b-xl">
           <article className="w-full h-full">
-            <p className="text-lg text-white font-semibold lg:text-2xl mb-10">
+            <p
+              className={
+                dark === false
+                  ? "text-lg text-white font-semibold lg:text-2xl mb-10"
+                  : "text-lg text-black font-semibold lg:text-2xl mb-10"
+              }
+            >
               {name}
             </p>
             <article className="flex flex-row justify-between">
               <a href={code} target="_blank" rel="noreferrer">
-                <p className="text-white text-lg lg:text-2xl font-semibold">
+                <p
+                  className={
+                    dark === false
+                      ? "text-white text-lg lg:text-2xl font-semibold"
+                      : "text-black text-lg lg:text-2xl font-semibold"
+                  }
+                >
                   {"</>"}
                 </p>
               </a>
               <a href={link} target="_blank" rel="noreferrer">
-                <p className="text-white text-lg lg:text-2xl font-semibold">
+                <p
+                  className={
+                    dark === false
+                      ? "text-white text-lg lg:text-2xl font-semibold"
+                      : "text-black text-lg lg:text-2xl font-semibold"
+                  }
+                >
                   Link
                 </p>
               </a>
