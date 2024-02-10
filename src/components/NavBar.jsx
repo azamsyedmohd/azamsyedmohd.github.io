@@ -28,7 +28,13 @@ const NavBar = () => {
             : "fixed w-full  flex justify-between items-center px-12 py-5 bg-[#121212] z-50 shadow-md"
         }
       >
-        <p className="font-caveat text-white text-4xl ml-3">
+        <p
+          className={
+            dark === false
+              ? "font-caveat text-white text-4xl ml-3"
+              : "font-caveat text-[#a5b4fc] text-4xl ml-3"
+          }
+        >
           <span className="pr-1">Syed</span>
           <span className="pr-1 ">Mohd</span>
           <span className="pr-1">Azam</span>
@@ -38,40 +44,74 @@ const NavBar = () => {
             Home
           </li> */}
           <Link to="about">
-            <li className="text-white font-semibold text-xl hover:cursor-pointer  hover:border-[1px] p-2 hover:rounded-md italic">
+            <li
+              className={
+                dark === false
+                  ? "text-white font-semibold text-xl hover:cursor-pointer  hover:border-[1px] p-2 hover:rounded-md italic"
+                  : "text-[#a5b4fc] font-semibold text-xl hover:cursor-pointer  hover:border-[1px] p-2 hover:rounded-md italic"
+              }
+            >
               About
             </li>
           </Link>
           <Link to="skills">
-            <li className="text-white font-semibold text-xl hover:cursor-pointer  hover:border-[1px] p-2 hover:rounded-md italic">
+            <li
+              className={
+                dark === false
+                  ? "text-white font-semibold text-xl hover:cursor-pointer  hover:border-[1px] p-2 hover:rounded-md italic"
+                  : "text-[#a5b4fc] font-semibold text-xl hover:cursor-pointer  hover:border-[1px] p-2 hover:rounded-md italic"
+              }
+            >
               Skills
             </li>
           </Link>
           <Link to="projects">
-            <li className="text-white font-semibold text-xl hover:cursor-pointer  hover:border-[1px] p-2 hover:rounded-md italic">
+            <li
+              className={
+                dark === false
+                  ? "text-white font-semibold text-xl hover:cursor-pointer  hover:border-[1px] p-2 hover:rounded-md italic"
+                  : "text-[#a5b4fc] font-semibold text-xl hover:cursor-pointer  hover:border-[1px] p-2 hover:rounded-md italic"
+              }
+            >
               Projects
             </li>
           </Link>
           <Link to="education">
-            <li className="text-white font-semibold text-xl hover:cursor-pointer hover:border-[1px] p-2 hover:rounded-md italic">
+            <li
+              className={
+                dark === false
+                  ? "text-white font-semibold text-xl hover:cursor-pointer hover:border-[1px] p-2 hover:rounded-md italic"
+                  : "text-[#a5b4fc] font-semibold text-xl hover:cursor-pointer hover:border-[1px] p-2 hover:rounded-md italic"
+              }
+            >
               Education
             </li>
           </Link>
           <Link to="contact">
-            <li className="text-white font-semibold text-xl hover:cursor-pointer hover:border-[1px] p-2 hover:rounded-md italic">
+            <li
+              className={
+                dark === false
+                  ? "text-white font-semibold text-xl hover:cursor-pointer hover:border-[1px] p-2 hover:rounded-md italic"
+                  : "text-[#a5b4fc] font-semibold text-xl hover:cursor-pointer hover:border-[1px] p-2 hover:rounded-md italic"
+              }
+            >
               Contact
             </li>
           </Link>
         </ul>
         <section className="hidden lg:flex lg:flex-row lg:gap-4  lg:justify-center lg:items-center ">
           <button
-            className="text-white font-semibold italic text-xl"
+            className={
+              dark === false
+                ? "text-white font-semibold italic text-xl"
+                : "text-[#a5b4fc] font-semibold italic text-xl"
+            }
             onClick={handleDarkMode}
           >
             {dark === true ? (
               <BsToggleOn className="w-8 h-8 font-bold" />
             ) : (
-              <BsToggleOff className="w-8 h-8 font-bold" />
+              <BsToggleOff className="w-8 h-8 font-bold " />
             )}
           </button>
           {dark === true ? (
