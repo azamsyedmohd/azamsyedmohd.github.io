@@ -5,11 +5,19 @@ import JavaScript from "../assets/JavaScript.png";
 import React from "../assets/React.png";
 import GitHub from "../assets/Github.png";
 import ReduxToolkit from "../assets/Redux.png";
+import { useSelector } from "react-redux";
 const Skills = () => {
+  const dark = useSelector((state) => state?.darkMode?.isDarkMode);
   const skillQuote = "Skills are the currency of the future, so invest wisely";
   return (
     <>
-      <section className="w-full min-h-screen bg-[#a5b4fc] py-24">
+      <section
+        className={
+          dark === false
+            ? "w-full min-h-screen bg-[#a5b4fc] py-24"
+            : "w-full min-h-screen bg-blue-900 py-24"
+        }
+      >
         <section className="w-3/4 mx-auto  flex flex-col gap-12">
           <article className="w-full flex justify-center">
             <p className=" text-xl md:text-2xl lg:text-4xl font-roboto  tracking-wide w-fit mt-20 text-white italic ">
