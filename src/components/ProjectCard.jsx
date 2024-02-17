@@ -12,7 +12,7 @@ const ProjectCard = ({ project }) => {
           className={
             dark === false
               ? "w-full h-3/6 p-1 border-[#6a1b9a] border-2 rounded-t-xl"
-              : "w-full h-3/6 p-1 border-[#a5b4fc] border-2 rounded-t-xl"
+              : "w-full h-3/6 p-1 border-[#121212] border-2 rounded-t-xl"
           }
         >
           <img className="w-full h-full rounded-t-xl" src={src} alt="Image " />
@@ -29,7 +29,7 @@ const ProjectCard = ({ project }) => {
               className={
                 dark === false
                   ? "text-lg text-white font-semibold lg:text-2xl mb-10"
-                  : "text-lg text-black font-semibold lg:text-2xl mb-10"
+                  : "text-lg text-white font-semibold lg:text-2xl mb-10"
               }
             >
               {name}
@@ -40,7 +40,7 @@ const ProjectCard = ({ project }) => {
                   className={
                     dark === false
                       ? "text-white text-lg lg:text-2xl font-semibold"
-                      : "text-black text-lg lg:text-2xl font-semibold"
+                      : "text-white text-lg lg:text-2xl font-semibold"
                   }
                 >
                   {"</>"}
@@ -51,7 +51,7 @@ const ProjectCard = ({ project }) => {
                   className={
                     dark === false
                       ? "text-white text-lg lg:text-2xl font-semibold"
-                      : "text-black text-lg lg:text-2xl font-semibold"
+                      : "text-white text-lg lg:text-2xl font-semibold"
                   }
                 >
                   Link

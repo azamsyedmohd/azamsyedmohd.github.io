@@ -115,7 +115,7 @@ const NavBar = () => {
             )}
           </button>
           {dark === true ? (
-            <MdDarkMode className="w-8 h-8 text-white font-bold hover:cursor-pointer" />
+            <MdDarkMode className="w-8 h-8  font-bold hover:cursor-pointer text-[#a5b4fc]" />
           ) : (
             <IoSunny className="w-8 h-8 text-white font-bold hover:cursor-pointer " />
           )}
