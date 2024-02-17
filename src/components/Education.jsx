@@ -9,7 +9,7 @@ const Education = () => {
       <section
         className={
           dark === false
-            ? "min-h-screen w-full bg-[#6a1b9a] py-28"
+            ? "min-h-screen w-full bg-[#6a1b8b] py-28"
             : "min-h-screen w-full bg-[#121212] py-28"
         }
       >

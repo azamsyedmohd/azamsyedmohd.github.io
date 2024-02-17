@@ -11,7 +11,7 @@ const ProjectCard = ({ project }) => {
         <article
           className={
             dark === false
-              ? "w-full h-3/6 p-1 border-[#6a1b9a] border-2 rounded-t-xl"
+              ? "w-full h-3/6 p-1 border-[#6a1b8b] border-2 rounded-t-xl"
               : "w-full h-3/6 p-1 border-[#a5b4fc] border-2 rounded-t-xl"
           }
         >

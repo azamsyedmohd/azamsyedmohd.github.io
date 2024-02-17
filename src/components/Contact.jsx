@@ -15,7 +15,7 @@ const Contact = () => {
           <p
             className={
               dark === false
-                ? "text-[#6a1b9a] lg:text-4xl py-3 italic font-semibold text-center pb-7 tracking-wider md:text-3xl text-2xl"
+                ? "text-[#6a1b8b] lg:text-4xl py-3 italic font-semibold text-center pb-7 tracking-wider md:text-3xl text-2xl"
                 : "text-[#a5b4fc] lg:text-4xl py-3 italic font-semibold text-center pb-7 tracking-wider md:text-3xl text-2xl"
             }
           >
@@ -89,7 +89,7 @@ const Contact = () => {
               <button
                 className={
                   dark === false
-                    ? "bg-[#6a1b9a] py-2 px-3 text-white rounded-md font-semibold text-lg lg:text-xl ml-2 mt-2 tracking-wider italic"
+                    ? "bg-[#6a1b8b] py-2 px-3 text-white rounded-md font-semibold text-lg lg:text-xl ml-2 mt-2 tracking-wider italic"
                     : "bg-[#a5b4fc] py-2 px-3 text-black rounded-md font-semibold text-lg lg:text-xl ml-2 mt-2 tracking-wider italic"
                 }
               >
