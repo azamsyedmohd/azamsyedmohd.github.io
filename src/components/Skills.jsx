@@ -14,7 +14,7 @@ const Skills = () => {
       <section
         className={
           dark === false
-            ? "w-full min-h-screen bg-[#a5b4fc] py-24"
+            ? "w-full min-h-screen bg-[#6a1b9a] py-24"
             : "w-full min-h-screen bg-[#121212] py-24"
         }
       >
