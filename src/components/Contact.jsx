@@ -12,14 +12,26 @@ const Contact = () => {
         }
       >
         <section className="md:w-9/12 md:mx-auto w-full ">
-          <p className="text-[#6a1b9a] lg:text-4xl py-3 italic font-semibold text-center pb-7 tracking-wider md:text-3xl text-2xl">
+          <p
+            className={
+              dark === false
+                ? "text-[#6a1b9a] lg:text-4xl py-3 italic font-semibold text-center pb-7 tracking-wider md:text-3xl text-2xl"
+                : "text-[#a5b4fc] lg:text-4xl py-3 italic font-semibold text-center pb-7 tracking-wider md:text-3xl text-2xl"
+            }
+          >
             Get in Touch !!
           </p>
         </section>
         <section className="lg:w-9/12  lg:mx-auto py-3 w-full">
           <section className="lg:w-6/12 mx-auto w-9/12 px-10 flex flex-col gap-5">
             <article className="flex flex-col gap-2">
-              <p className="text-[#6a1b9a] font-semibold text-lg md:text-xl lg:text-2xl italic tracking-wide">
+              <p
+                className={
+                  dark === false
+                    ? "text-[#6a1b9a] font-semibold text-lg md:text-xl lg:text-2xl italic tracking-wide"
+                    : "text-[#a5b4fc] font-semibold text-lg md:text-xl lg:text-2xl italic tracking-wide"
+                }
+              >
                 Name :{" "}
               </p>
               <input
@@ -33,7 +45,13 @@ const Contact = () => {
               />
             </article>
             <article className="flex flex-col gap-2">
-              <p className="text-[#6a1b9a] font-semibold text-lg md:text-xl lg:text-2xl italic tracking-wide">
+              <p
+                className={
+                  dark === false
+                    ? "text-[#6a1b9a] font-semibold text-lg md:text-xl lg:text-2xl italic tracking-wide"
+                    : "text-[#a5b4fc] font-semibold text-lg md:text-xl lg:text-2xl italic tracking-wide"
+                }
+              >
                 Email :{" "}
               </p>
               <input
@@ -47,7 +65,13 @@ const Contact = () => {
               />
             </article>
             <article className="flex flex-col gap-2 ">
-              <p className="text-[#6a1b9a] font-semibold text-lg md:text-xl lg:text-2xl italic tracking-wide">
+              <p
+                className={
+                  dark === false
+                    ? "text-[#6a1b9a] font-semibold text-lg md:text-xl lg:text-2xl italic tracking-wide"
+                    : "text-[#a5b4fc] font-semibold text-lg md:text-xl lg:text-2xl italic tracking-wide"
+                }
+              >
                 Message :{" "}
               </p>
               <textarea
