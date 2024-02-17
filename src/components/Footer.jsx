@@ -10,7 +10,7 @@ const Footer = () => {
       <section
         className={
           dark === false
-            ? " w-full bg-[#a5b4fc] py-6 px-16 flex flex-col gap-3 lg:flex-row lg:justify-between  items-center lg:gap-20 border-2 shadow-xl"
+            ? " w-full bg-[#6a1b9a] py-6 px-16 flex flex-col gap-3 lg:flex-row lg:justify-between  items-center lg:gap-20 border-2 shadow-xl"
             : " w-full bg-[#121212] py-6 px-16 flex flex-col gap-3 lg:flex-row lg:justify-between  items-center lg:gap-20  shadow-xl"
         }
       >
@@ -48,7 +48,7 @@ const Footer = () => {
               <span
                 className={
                   dark === false
-                    ? "p-2 bg-white text-[#a5b4fc] rounded-full ml-4 hover:cursor-pointer font-semibold animate-bounce inline-block "
+                    ? "p-2 bg-white text-[#6a1b9a] rounded-full ml-4 hover:cursor-pointer font-semibold animate-bounce inline-block "
                     : "p-2 bg-[#a5b4fc] text-[#121212] rounded-full ml-4 hover:cursor-pointer font-semibold animate-bounce inline-block "
                 }
                 onClick={() => scrollToTop()}
