@@ -29,7 +29,13 @@ const About = () => {
             >
               Hi 👋 My name is
             </p>
-            <p className="text-3xl  whitespace-nowrap text-[#a5b4fc] lg:text-5xl mb-7 italic">
+            <p
+              className={
+                dark === false
+                  ? "text-3xl  whitespace-nowrap text-[#6a1b9a] lg:text-5xl mb-7 italic"
+                  : "text-3xl  whitespace-nowrap text-[#a5b4fc] lg:text-5xl mb-7 italic"
+              }
+            >
               Syed Mohd Azam
             </p>
             <p
