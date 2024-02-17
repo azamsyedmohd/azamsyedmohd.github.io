@@ -16,13 +16,13 @@ const Projects = () => {
         }
       >
         <section className="w-9/12 mx-auto pt-24">
-          <span className="text-lg md:2xl leading-relaxed lg:text-4xl text-[#a5b4fc] italic">
+          <span className="text-lg md:2xl leading-relaxed lg:text-4xl text-[#6a1b9a] italic">
             {"'"}
           </span>
-          <span className="text-lg md:2xl leading-relaxed lg:text-4xl text-[#a5b4fc] italic ">
+          <span className="text-lg md:2xl leading-relaxed lg:text-4xl text-[#6a1b9a] italic ">
             {project}
           </span>
-          <span className="text-lg md:2xl leading-relaxed lg:text-4xl text-[#a5b4fc] italic">
+          <span className="text-lg md:2xl leading-relaxed lg:text-4xl text-[#6a1b9a] italic">
             {"'"}
           </span>
         </section>
