@@ -23,7 +23,7 @@ const About = () => {
             <p
               className={
                 dark === false
-                  ? "text-xl  lg:text-2xl mb-4 font-serif font-light italic tracking-widest text-opacity-85 text-indigo-800"
+                  ? "text-xl  lg:text-2xl mb-4 font-serif font-light italic tracking-widest text-opacity-85 text-[#6a1b9a]"
                   : "text-xl  lg:text-2xl mb-4 font-serif font-light italic tracking-widest text-opacity-85 text-[#a5b4fc]"
               }
             >
@@ -35,7 +35,7 @@ const About = () => {
             <p
               className={
                 dark === false
-                  ? "text-3xl  lg:text-5xl mb-5 font-mono text-indigo-800"
+                  ? "text-3xl  lg:text-5xl mb-5 font-mono text-[#6a1b9a]"
                   : "text-3xl  lg:text-5xl mb-5 font-mono text-[#a5b4fc]"
               }
             >
