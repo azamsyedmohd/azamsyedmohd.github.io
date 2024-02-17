@@ -157,7 +157,11 @@ const NavBar = () => {
                 href="https://www.linkedin.com/in/syed-mohd-azam/"
                 rel="noreferrer"
                 target="_blank"
-                className="flex flex-row items-center justify-center bg-[#a5b4fc] p-2 ml-[-92px] hover:ml-[-10px] w-fit"
+                className={
+                  dark === false
+                    ? "flex flex-row items-center justify-center bg-[#6a1b9a] p-2 ml-[-92px] hover:ml-[-10px] w-fit"
+                    : "flex flex-row items-center justify-center bg-[#a5b4fc] p-2 ml-[-92px] hover:ml-[-10px] w-fit"
+                }
               >
                 <span className=" text-xl text-white font-semibold pl-2 pr-2">
                   LinkedIn
@@ -170,7 +174,11 @@ const NavBar = () => {
                 href="https://github.com/Syed-Mohd-Azam"
                 rel="noreferrer"
                 target="_blank"
-                className="flex flex-row  items-center justify-center bg-[#a5b4fc] p-2 w-fit ml-[-80px] hover:ml-[-10px]"
+                className={
+                  dark === false
+                    ? "flex flex-row  items-center justify-center bg-[#6a1b9a] p-2 w-fit ml-[-80px] hover:ml-[-10px]"
+                    : "flex flex-row  items-center justify-center bg-[#a5b4fc] p-2 w-fit ml-[-80px] hover:ml-[-10px]"
+                }
               >
                 <span className=" text-xl text-white font-semibold pr-2 pl-2">
                   GitHub
@@ -184,7 +192,11 @@ const NavBar = () => {
                 href="mailto:smazamamu@gmail.com"
                 rel="noreferrer"
                 target="_blank"
-                className="flex flex-row  items-center justify-center bg-[#a5b4fc] p-2 w-fit ml-[-80px] hover:ml-[-10px]"
+                className={
+                  dark === false
+                    ? "flex flex-row  items-center justify-center bg-[#6a1b9a] p-2 w-fit ml-[-80px] hover:ml-[-10px]"
+                    : "flex flex-row  items-center justify-center bg-[#a5b4fc] p-2 w-fit ml-[-80px] hover:ml-[-10px]"
+                }
               >
                 <span className=" text-xl text-white font-semibold pr-2 pl-2">
                   G-Mail
@@ -198,7 +210,11 @@ const NavBar = () => {
                 href="tel:+91-9760217119"
                 rel="noreferrer"
                 target="_blank"
-                className="flex flex-row  items-center justify-center bg-[#a5b4fc] p-2 w-fit ml-[-160px] hover:ml-[-10px]"
+                className={
+                  dark === false
+                    ? "flex flex-row  items-center justify-center bg-[#6a1b9a] p-2 w-fit ml-[-160px] hover:ml-[-10px]"
+                    : "flex flex-row  items-center justify-center bg-[#a5b4fc] p-2 w-fit ml-[-160px] hover:ml-[-10px]"
+                }
               >
                 <span className=" text-xl text-white font-semibold pr-2 pl-2">
                   +91-9760217119
