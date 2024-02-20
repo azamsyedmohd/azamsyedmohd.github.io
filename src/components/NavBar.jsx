@@ -122,9 +122,21 @@ const NavBar = () => {
         </section>
         <article className="lg:hidden z-10" onClick={() => setToggle(!toggle)}>
           {toggle ? (
-            <FaAlignJustify className="ml-2 w-5 h-5 sm:h-7 sm:w-7 text-white " />
+            <FaAlignJustify
+              className={
+                dark === false
+                  ? "ml-2 w-5 h-5 sm:h-7 sm:w-7 text-white "
+                  : "ml-2 w-5 h-5 sm:h-7 sm:w-7 text-[#a5b4fc] "
+              }
+            />
           ) : (
-            <AiOutlineClose className="w-5 h-5  sm:h-7 sm:w-7 text-white font-extrabold ml-2" />
+            <AiOutlineClose
+              className={
+                dark == false
+                  ? "w-5 h-5  sm:h-7 sm:w-7 text-white font-extrabold ml-2"
+                  : "w-5 h-5  sm:h-7 sm:w-7 text-[#a5b4fc] font-extrabold ml-2"
+              }
+            />
           )}
         </article>
         {!toggle && (
