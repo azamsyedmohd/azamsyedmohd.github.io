@@ -12,7 +12,7 @@ const Projects = () => {
         className={
           dark === false
             ? "w-full min-h-screen py-20"
-            : "bg-black w-full min-h-screen py-20"
+            : "bg-[#003153] w-full min-h-screen py-20"
         }
       >
         <section className="w-9/12 mx-auto pt-24">

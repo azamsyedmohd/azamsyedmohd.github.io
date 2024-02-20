@@ -15,7 +15,7 @@ const About = () => {
         className={
           dark === false
             ? "w-full h-screen flex justify-center items-center "
-            : "w-full h-screen flex justify-center items-center bg-black"
+            : "w-full h-screen flex justify-center items-center bg-[#003153]"
         }
       >
         <section className="flex lg:flex-row max-w-7xl mx-auto lg:justify-end  items-center  flex-col  jutify-center gap-7">
