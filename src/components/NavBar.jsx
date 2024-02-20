@@ -99,7 +99,7 @@ const NavBar = () => {
             </li>
           </Link>
         </ul>
-        <section className=" flex flex-row gap-4  justify-center items-center ">
+        <section className=" flex flex-row gap-2 sm:gap-4  justify-center items-center ">
           <button
             className={
               dark === false
