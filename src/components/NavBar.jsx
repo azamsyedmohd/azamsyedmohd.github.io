@@ -128,7 +128,13 @@ const NavBar = () => {
           )}
         </article>
         {!toggle && (
-          <ul className="absolute left-0 top-0 bg-[#a5b4fc] w-full h-screen md:hidden flex flex-col gap-7 font-semibold text-4xl justify-center items-center">
+          <ul
+            className={
+              dark === false
+                ? "absolute left-0 top-0 bg-[#6a1b8b] w-full h-screen md:hidden flex flex-col gap-7 font-semibold text-4xl justify-center items-center"
+                : "absolute left-0 top-0 bg-[#121212] w-full h-screen md:hidden flex flex-col gap-7 font-semibold text-4xl justify-center items-center"
+            }
+          >
             <li className="text-white hover:border-[2px] hover:rounded-lg p-3">
               Home
             </li>
