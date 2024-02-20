@@ -31,15 +31,15 @@ const NavBar = () => {
         <p
           className={
             dark === false
-              ? "font-caveat text-white text-4xl ml-3"
-              : "font-caveat text-[#a5b4fc] text-4xl ml-3"
+              ? " font-caveat text-white text-2xl   lg:text-4xl ml-3 mr-2"
+              : " font-caveat text-[#a5b4fc] text-2xl lg:text-4xl ml-3 mr-2"
           }
         >
           <span className="pr-1">Syed</span>
           <span className="pr-1 ">Mohd</span>
           <span className="pr-1">Azam</span>
         </p>
-        <ul className="hidden md:flex md:flex-row  md:gap-x-3 lg:gap-x-7">
+        <ul className="hidden  lg:flex lg:flex-row   lg:gap-x-7">
           {/* <li className="text-white font-semibold text-xl hover:cursor-pointer hover:border-[1px] p-2 hover:rounded-md">
             Home
           </li> */}
@@ -99,7 +99,7 @@ const NavBar = () => {
             </li>
           </Link>
         </ul>
-        <section className="hidden lg:flex lg:flex-row lg:gap-4  lg:justify-center lg:items-center ">
+        <section className=" flex flex-row gap-4  justify-center items-center ">
           <button
             className={
               dark === false
@@ -109,30 +109,30 @@ const NavBar = () => {
             onClick={handleDarkMode}
           >
             {dark === true ? (
-              <BsToggleOn className="w-8 h-8 font-bold" />
+              <BsToggleOn className="w-6 h-6 sm:w-8 sm:h-8 font-bold" />
             ) : (
-              <BsToggleOff className="w-8 h-8 font-bold " />
+              <BsToggleOff className="w-6 h-6  sm:w-8 sm:h-8 font-bold " />
             )}
           </button>
           {dark === true ? (
-            <MdDarkMode className="w-8 h-8  font-bold hover:cursor-pointer text-[#a5b4fc]" />
+            <MdDarkMode className="w-6 h-6 sm:w-8 sm:h-8  font-bold hover:cursor-pointer text-[#a5b4fc]" />
           ) : (
-            <IoSunny className="w-8 h-8 text-white font-bold hover:cursor-pointer " />
+            <IoSunny className="w-6 h-6 sm:w-8 sm:h-8 text-white font-bold hover:cursor-pointer " />
           )}
         </section>
-        <article className="md:hidden z-10" onClick={() => setToggle(!toggle)}>
+        <article className="lg:hidden z-10" onClick={() => setToggle(!toggle)}>
           {toggle ? (
-            <FaAlignJustify className="h-7 w-7 text-white " />
+            <FaAlignJustify className="ml-2 w-5 h-5 sm:h-7 sm:w-7 text-white " />
           ) : (
-            <AiOutlineClose className="h-7 w-7 text-white font-extrabold" />
+            <AiOutlineClose className="w-5 h-5  sm:h-7 sm:w-7 text-white font-extrabold ml-2" />
           )}
         </article>
         {!toggle && (
           <ul
             className={
               dark === false
-                ? "absolute left-0 top-0 bg-[#6a1b8b] w-full h-screen md:hidden flex flex-col gap-7 font-semibold text-4xl justify-center items-center"
-                : "absolute left-0 top-0 bg-[#121212] w-full h-screen md:hidden flex flex-col gap-7 font-semibold text-4xl justify-center items-center"
+                ? "absolute left-0 top-0 bg-[#6a1b8b] w-full h-screen lg:hidden flex flex-col gap-7 font-semibold text-4xl justify-center items-center"
+                : "absolute left-0 top-0 bg-[#121212] w-full h-screen lg:hidden flex flex-col gap-7 font-semibold text-4xl justify-center items-center"
             }
           >
             <li
