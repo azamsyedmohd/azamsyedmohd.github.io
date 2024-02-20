@@ -135,22 +135,58 @@ const NavBar = () => {
                 : "absolute left-0 top-0 bg-[#121212] w-full h-screen md:hidden flex flex-col gap-7 font-semibold text-4xl justify-center items-center"
             }
           >
-            <li className="text-white hover:border-[2px] hover:rounded-lg p-3">
+            <li
+              className={
+                dark === false
+                  ? "text-white hover:border-[2px] hover:rounded-lg p-3"
+                  : "text-[#a5b4fc] hover:border-[2px] hover:rounded-lg p-3"
+              }
+            >
               Home
             </li>
-            <li className="text-white hover:border-[2px] hover:rounded-lg p-3">
+            <li
+              className={
+                dark === false
+                  ? "text-white hover:border-[2px] hover:rounded-lg p-3"
+                  : "text-[#a5b4fc] hover:border-[2px] hover:rounded-lg p-3"
+              }
+            >
               About
             </li>
-            <li className="text-white hover:border-[2px] hover:rounded-lg p-3">
+            <li
+              className={
+                dark === false
+                  ? "text-white hover:border-[2px] hover:rounded-lg p-3"
+                  : "text-[#a5b4fc] hover:border-[2px] hover:rounded-lg p-3"
+              }
+            >
               Skills
             </li>
-            <li className="text-white hover:border-[2px] hover:rounded-lg p-3">
+            <li
+              className={
+                dark === false
+                  ? "text-white hover:border-[2px] hover:rounded-lg p-3"
+                  : "text-[#a5b4fc] hover:border-[2px] hover:rounded-lg p-3"
+              }
+            >
               Projects
             </li>
-            <li className="text-white hover:border-[2px] hover:rounded-lg p-3">
+            <li
+              className={
+                dark === false
+                  ? "text-white hover:border-[2px] hover:rounded-lg p-3"
+                  : "text-[#a5b4fc] hover:border-[2px] hover:rounded-lg p-3"
+              }
+            >
               Education
             </li>
-            <li className="text-white hover:border-[2px] hover:rounded-lg p-3">
+            <li
+              className={
+                dark === false
+                  ? "text-white hover:border-[2px] hover:rounded-lg p-3"
+                  : "text-[#a5b4fc] hover:border-[2px] hover:rounded-lg p-3"
+              }
+            >
               Contact
             </li>
           </ul>
