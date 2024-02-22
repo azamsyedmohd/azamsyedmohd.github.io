@@ -1,10 +1,11 @@
 // AlL constants are there and can be imported whenever needed.
 import YouTube from "../assets/Youtube-Scrrenshot.png";
+import VideoPlayer from "../assets/Video-Player.png";
 import Swiggy from "../assets/Swiggy.png";
 const projects = [
   {
     name: "ReactTube Player - Video Player Application",
-    src: YouTube,
+    src: VideoPlayer,
     link: "https://mellow-piroshki-4e2159.netlify.app/",
     code: "https://github.com/Syed-Mohd-Azam/Video-Player-Project",
   },
