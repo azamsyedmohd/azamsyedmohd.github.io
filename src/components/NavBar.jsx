@@ -24,7 +24,7 @@ const NavBar = () => {
       <section
         className={
           dark === false
-            ? "fixed w-full  flex justify-between items-center px-12 py-5 bg-[#BA55D3] z-50 shadow-md"
+            ? "fixed w-full  flex justify-between items-center px-12 py-5 bg-[#4B0082] z-50 shadow-md"
             : "fixed w-full  flex justify-between items-center px-12 py-5 bg-[#003153] z-50 shadow-md"
         }
       >
@@ -213,7 +213,7 @@ const NavBar = () => {
                 target="_blank"
                 className={
                   dark === false
-                    ? "flex flex-row items-center justify-center bg-[#6a1b8b] p-2 ml-[-92px] hover:ml-[-10px] w-fit"
+                    ? "flex flex-row items-center justify-center bg-[#4B0082] p-2 ml-[-92px] hover:ml-[-10px] w-fit"
                     : "flex flex-row items-center justify-center bg-[#a5b4fc] p-2 ml-[-92px] hover:ml-[-10px] w-fit"
                 }
               >
@@ -230,7 +230,7 @@ const NavBar = () => {
                 target="_blank"
                 className={
                   dark === false
-                    ? "flex flex-row  items-center justify-center bg-[#6a1b8b] p-2 w-fit ml-[-80px] hover:ml-[-10px]"
+                    ? "flex flex-row  items-center justify-center bg-[#4B0082] p-2 w-fit ml-[-80px] hover:ml-[-10px]"
                     : "flex flex-row  items-center justify-center bg-[#a5b4fc] p-2 w-fit ml-[-80px] hover:ml-[-10px]"
                 }
               >
@@ -248,7 +248,7 @@ const NavBar = () => {
                 target="_blank"
                 className={
                   dark === false
-                    ? "flex flex-row  items-center justify-center bg-[#6a1b8b] p-2 w-fit ml-[-80px] hover:ml-[-10px]"
+                    ? "flex flex-row  items-center justify-center bg-[#4B0082] p-2 w-fit ml-[-80px] hover:ml-[-10px]"
                     : "flex flex-row  items-center justify-center bg-[#a5b4fc] p-2 w-fit ml-[-80px] hover:ml-[-10px]"
                 }
               >
@@ -266,7 +266,7 @@ const NavBar = () => {
                 target="_blank"
                 className={
                   dark === false
-                    ? "flex flex-row  items-center justify-center bg-[#6a1b8b] p-2 w-fit ml-[-160px] hover:ml-[-10px]"
+                    ? "flex flex-row  items-center justify-center bg-[#4B0082] p-2 w-fit ml-[-160px] hover:ml-[-10px]"
                     : "flex flex-row  items-center justify-center bg-[#a5b4fc] p-2 w-fit ml-[-160px] hover:ml-[-10px]"
                 }
               >
