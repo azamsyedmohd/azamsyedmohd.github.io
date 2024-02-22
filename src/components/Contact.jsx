@@ -8,7 +8,7 @@ const Contact = () => {
         className={
           dark === false
             ? "w-full min-h-screen pb-20 pt-28"
-            : "w-full min-h-screen pb-20 pt-28 bg-[#003153]"
+            : "w-full min-h-screen pb-20 pt-28 bg-[#1b2431]"
         }
       >
         <section className="md:w-9/12 md:mx-auto w-full ">
