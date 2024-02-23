@@ -2,7 +2,7 @@
 import YouTube from "../assets/Youtube-Scrrenshot.png";
 import VideoPlayer from "../assets/Video-Player.png";
 import Swiggy from "../assets/Swiggy.png";
-import Disney from "../assets/Disney.png"
+import Disney from "../assets/Disney.png";
 const projects = [
   {
     name: " Video Player Application ",
@@ -13,9 +13,9 @@ const projects = [
   {
     name: "Flims Explorer",
     src: Disney,
-    link: "https://vermillion-tapioca-211c42.netlify.app/" ,
-    code : "https://github.com/Syed-Mohd-Azam/Disney-Clone",
-  }
+    link: "https://vermillion-tapioca-211c42.netlify.app/",
+    code: "https://github.com/Syed-Mohd-Azam/Disney-Clone",
+  },
   {
     name: "SnackSwift - Mini Swiggy",
     src: Swiggy,
