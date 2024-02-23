@@ -2,20 +2,22 @@
 import ProjectCard from "./ProjectCard";
 import projects from "../utils/constants";
 import { useSelector } from "react-redux";
+
 const Projects = () => {
   const dark = useSelector((state) => state?.darkMode?.isDarkMode);
   const project =
     "Projects are the poetry of hard work, the prose of dedication, and the epics of achievement !!";
+
   return (
     <>
       <section
         className={
           dark === false
-            ? "w-full min-h-screen py-20"
-            : "bg-[#1b2431] w-full min-h-screen py-20"
+            ? "w-full min-h-screen py-20 relative"
+            : "w-full bg-[#1b2431]  min-h-screen py-20 "
         }
       >
-        <section className="w-9/12 mx-auto pt-24">
+        <section className=" pt-24 w-4/5 mx-auto">
           <span
             className={
               dark === false
@@ -44,7 +46,7 @@ const Projects = () => {
             {"'"}
           </span>
         </section>
-        <section className="w-9/12 mx-auto  p-8 my-8 flex lg:flex-row lg:grow  lg:gap-20 justify-center flex-col gap-10 pb-10">
+        <section className="w-4/5 mx-auto p-5 my-8 flex flex-row gap-8 flex-wrap ">
           {projects?.map((project, index) => (
             <ProjectCard key={index} project={project} />
           ))}

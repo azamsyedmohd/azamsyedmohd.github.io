@@ -5,7 +5,7 @@ import Swiggy from "../assets/Swiggy.png";
 import Disney from "../assets/Disney.png";
 const projects = [
   {
-    name: " Video Player Application ",
+    name: " ReactTube Player ",
     src: VideoPlayer,
     link: "https://mellow-piroshki-4e2159.netlify.app/",
     code: "https://github.com/Syed-Mohd-Azam/Video-Player-Project",
@@ -17,7 +17,7 @@ const projects = [
     code: "https://github.com/Syed-Mohd-Azam/Disney-Clone",
   },
   {
-    name: "SnackSwift - Mini Swiggy",
+    name: "SnackSwift",
     src: Swiggy,
     link: "https://marvelous-boba-04d9c8.netlify.app/",
     code: "https://github.com/Syed-Mohd-Azam/SnackSwift---Mini-Swiggy-Application",

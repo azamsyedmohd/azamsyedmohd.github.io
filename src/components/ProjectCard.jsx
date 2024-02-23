@@ -7,7 +7,7 @@ const ProjectCard = ({ project }) => {
   const { name, src, code, link } = project;
   return (
     <>
-      <section className="max-w-96 max-h-80 hover:scale-110 ">
+      <section className="w-80 h-80 hover:scale-110 ">
         <article
           className={
             dark === false
