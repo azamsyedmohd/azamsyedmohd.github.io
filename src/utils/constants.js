@@ -1,5 +1,4 @@
 // AlL constants are there and can be imported whenever needed.
-import YouTube from "../assets/Youtube-Scrrenshot.png";
 import VideoPlayer from "../assets/Video-Player.png";
 import Swiggy from "../assets/Swiggy.png";
 import Disney from "../assets/Disney.png";
