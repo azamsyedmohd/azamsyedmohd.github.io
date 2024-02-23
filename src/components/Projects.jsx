@@ -13,11 +13,11 @@ const Projects = () => {
       <section
         className={
           dark === false
-            ? "w-full min-h-screen py-20 relative"
+            ? "w-full min-h-screen py-10 relative"
             : "w-full bg-[#1b2431]  min-h-screen py-20 "
         }
       >
-        <section className=" pt-24 w-4/5 mx-auto">
+        <section className=" pt-10 w-4/5 mx-auto">
           <span
             className={
               dark === false
