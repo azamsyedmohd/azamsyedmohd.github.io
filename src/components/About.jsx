@@ -1,4 +1,4 @@
-import Profile from "../assets/Profile Image.jpeg";
+import Profile from "../assets/Profile.jpg";
 import { useTypewriter } from "react-simple-typewriter";
 import { useSelector } from "react-redux";
 const About = () => {
