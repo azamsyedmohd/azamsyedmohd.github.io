@@ -50,7 +50,7 @@ const About = () => {
           </article>
           <article className="flex justify-center  relative ">
             <img
-              className="w-2/3 h-2/3 rounded-t-full rounded-b-full z-20"
+              className="lg:w-[300px] lg:h-[270px] w-[200px] h-[200px] rounded-full   lg:rounded-2xl z-20"
               src={Profile}
               alt="Profile-Image"
             />
