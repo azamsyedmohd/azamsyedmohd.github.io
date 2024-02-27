@@ -10,17 +10,18 @@ const projects = [
     link: "https://mellow-piroshki-4e2159.netlify.app/",
     code: "https://github.com/Syed-Mohd-Azam/Video-Player-Project",
   },
-  {
-    name: "Flims Explorer",
-    src: Disney,
-    link: "https://vermillion-tapioca-211c42.netlify.app/",
-    code: "https://github.com/Syed-Mohd-Azam/Disney-Clone",
-  },
+
   {
     name: "Weather Application",
     src: Weather,
     link: "https://glittering-otter-4a9d76.netlify.app/",
     code: "https://github.com/Syed-Mohd-Azam/Weather-Application",
+  },
+  {
+    name: "Flims Explorer",
+    src: Disney,
+    link: "https://vermillion-tapioca-211c42.netlify.app/",
+    code: "https://github.com/Syed-Mohd-Azam/Disney-Clone",
   },
   {
     name: "SnackSwift",
