@@ -2,6 +2,7 @@
 import VideoPlayer from "../assets/Video-Player.png";
 import Swiggy from "../assets/Swiggy.png";
 import Disney from "../assets/DisneyHotstar.png";
+import Weather from "../assets/weather.png";
 const projects = [
   {
     name: " ReactTube Player ",
@@ -14,6 +15,12 @@ const projects = [
     src: Disney,
     link: "https://vermillion-tapioca-211c42.netlify.app/",
     code: "https://github.com/Syed-Mohd-Azam/Disney-Clone",
+  },
+  {
+    name: "Weather Application",
+    src: Weather,
+    link: "https://glittering-otter-4a9d76.netlify.app/",
+    code: "https://github.com/Syed-Mohd-Azam/Weather-Application",
   },
   {
     name: "SnackSwift",
