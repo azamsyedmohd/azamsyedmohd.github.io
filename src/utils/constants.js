@@ -1,6 +1,6 @@
 // AlL constants are there and can be imported whenever needed.
 import VideoPlayer from "../assets/Video-Player.png";
-import ECommerce from "../assets/Ecommerce.PNG";
+import ECommerce from "../assets/Ecommerce.png";
 import Weather from "../assets/weather.png";
 const projects = [
   {
