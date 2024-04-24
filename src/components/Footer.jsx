@@ -10,7 +10,7 @@ const Footer = () => {
       <section
         className={
           dark === false
-            ? " w-full bg-[#6C3082] py-6 px-16 flex flex-col gap-3 lg:flex-row lg:justify-between  items-center lg:gap-20 border-2 shadow-xl"
+            ? " w-full bg-[#6C3082] py-6 px-16 flex flex-col gap-3 lg:flex-row lg:justify-between  items-center lg:gap-20  shadow-xl"
             : " w-full bg-[#003153] py-6 px-16 flex flex-col gap-3 lg:flex-row lg:justify-between  items-center lg:gap-20  shadow-xl"
         }
       >
